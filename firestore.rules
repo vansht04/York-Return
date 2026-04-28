@@ -1,0 +1,100 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(existingData) {
+      return isSignedIn() && request.auth.uid == existingData.reportedBy;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidItem(data) {
+      return data.keys().hasAll(['type', 'title', 'location', 'status', 'reportedBy', 'reporterName', 'createdAt', 'description', 'category'])
+        && data.keys().size() >= 9
+        && data.keys().size() <= 14
+        && data.type in ['lost', 'found']
+        && data.status in ['active', 'resolved']
+        && data.title is string && data.title.size() <= 100
+        && data.description is string && data.description.size() <= 2000
+        && data.location is string && data.location.size() <= 200
+        && data.category is string && data.category.size() <= 50
+        && data.reportedBy == request.auth.uid
+        && data.reporterName is string && data.reporterName.size() <= 100
+        && data.createdAt == request.time
+        && (!data.keys().hasAny(['latitude']) || data.latitude is number)
+        && (!data.keys().hasAny(['longitude']) || data.longitude is number)
+        && (!data.keys().hasAny(['handoverMethod']) || data.handoverMethod in ['security', 'direct', 'both'])
+        && (!data.keys().hasAny(['securityLocation']) || data.securityLocation is string || data.securityLocation == null);
+    }
+
+    function isValidReview(data) {
+      return data.keys().hasAll(['rating', 'comment', 'authorName', 'authorId', 'createdAt'])
+        && data.keys().size() == 5
+        && data.rating is number && data.rating >= 1 && data.rating <= 5
+        && data.comment is string && data.comment.size() <= 500
+        && data.authorId == request.auth.uid
+        && data.authorName is string && data.authorName.size() <= 100
+        && data.createdAt == request.time;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // --- Collection: Items ---
+    match /items/{itemId} {
+      allow list: if true; // Everyone can browse basic info
+      allow get: if true;
+
+      allow create: if isSignedIn() 
+        && isValidId(itemId) 
+        && isValidItem(incoming());
+
+      allow update: if isSignedIn()
+        && (
+          (isAdmin() && incoming().diff(existing()).affectedKeys().hasOnly(['status'])) ||
+          (isOwner(existing()) && incoming().diff(existing()).affectedKeys().hasOnly(['title', 'description', 'location', 'category']))
+        );
+
+      allow delete: if isSignedIn() && (isAdmin() || isOwner(existing()));
+      
+      // Subcollection for sensitive contact info per item
+      match /private/contact {
+        allow read: if isSignedIn(); // Verified York users can see contact info
+        allow create, update: if isSignedIn() && isOwner(get(/databases/$(database)/documents/items/$(itemId)).data);
+        allow delete: if false;
+      }
+    }
+
+    // --- Collection: Reviews ---
+    match /reviews/{reviewId} {
+      allow list: if true;
+      allow create: if isSignedIn() && isValidId(reviewId) && isValidReview(incoming());
+      allow update, delete: if isSignedIn() && request.auth.uid == existing().authorId;
+    }
+
+    // --- Collection: Admins ---
+    match /admins/{adminId} {
+      allow get: if isSignedIn() && request.auth.uid == adminId;
+    }
+  }
+}
