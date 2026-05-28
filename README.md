@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✦ YorkReturn ✦
+# YorkReturn
 
 > **The central hub for lost & found items on the York University campus.**
 > *Ditch the paper flyers. Find what’s yours.*
