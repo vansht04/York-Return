@@ -19,7 +19,7 @@ export default function Team() {
     },
     {
       name: "Agasti Kulkarni",
-      role: "Founder",
+      role: "Co-Founder",
       bio: "LOOKING FOR AN INTERNSHIP, HIRE ME!!!!",
       img: "https://media.licdn.com/dms/image/v2/D4E03AQGfzSoACMojJg/profile-displayphoto-crop_800_800/B4EZtjntwNJQAM-/0/1766902914497?e=1785974400&v=beta&t=DqB26lIRloVY3YuFIBVlv00QK5AR4QDdgRmqaeSWzDU",
       linkedin: "https://ca.linkedin.com/in/agasti-kulkarni-005191329"
