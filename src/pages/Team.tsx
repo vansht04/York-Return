@@ -13,7 +13,7 @@ export default function Team() {
     {
       name: "Vineet Tejnani",
       role: "Co-Founder",
-      bio: "LOOKING FOR AN INTERNSHIP, HIRE ME!!!!",
+      bio: "Unofficial social media admin",
       img: "https://media.licdn.com/dms/image/v2/D4D03AQG5l96c77h03Q/profile-displayphoto-shrink_800_800/B4DZa2NW1pGwAc-/0/1746813677765?e=1785974400&v=beta&t=flpLCJ9AKmV3RdGzD8EP8n9daJRV2VMBEIQSxWwV0Qs",
       linkedin: "https://ca.linkedin.com/in/vineettejnani"
     },
