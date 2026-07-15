@@ -27,7 +27,7 @@ export default function Team() {
     {
       name: "Kenzi Sulaiman",
       role: "Co-Founder",
-      bio: "LOOKING FOR AN INTERNSHIP, HIRE ME!!!!",
+      bio: "Mostly (always) caffeinated",
       img: "https://media.licdn.com/dms/image/v2/D4E03AQGaEIwACDXxew/profile-displayphoto-scale_200_200/B4EZ6gIjvjI0Ac-/0/1780803059365?e=1785974400&v=beta&t=R8aHgsTN3AqLnSO4_MSJh2Q5mCnJ0WSufLTjLn4iBSM",
       linkedin: "https://ca.linkedin.com/in/kenzis"
     }
