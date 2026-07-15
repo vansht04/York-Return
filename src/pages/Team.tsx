@@ -28,7 +28,7 @@ export default function Team() {
       name: "Kenzi Sulaiman",
       role: "Founder",
       bio: "LOOKING FOR AN INTERNSHIP, HIRE ME!!!!",
-      img: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnklMjBjYXR8ZW58MHx8MHx8fDA%3D",
+      img: "https://media.licdn.com/dms/image/v2/D4E03AQGaEIwACDXxew/profile-displayphoto-scale_200_200/B4EZ6gIjvjI0Ac-/0/1780803059365?e=1785974400&v=beta&t=R8aHgsTN3AqLnSO4_MSJh2Q5mCnJ0WSufLTjLn4iBSM",
       linkedin: "https://ca.linkedin.com/in/kenzis"
     }
   ];
