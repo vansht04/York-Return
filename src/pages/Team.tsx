@@ -14,7 +14,7 @@ export default function Team() {
       name: "Vineet Tejnani",
       role: "Founder",
       bio: "LOOKING FOR AN INTERNSHIP, HIRE ME!!!!",
-      img: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnklMjBjYXR8ZW58MHx8MHx8fDA%3D",
+      img: "https://media.licdn.com/dms/image/v2/D4D03AQG5l96c77h03Q/profile-displayphoto-shrink_800_800/B4DZa2NW1pGwAc-/0/1746813677765?e=1785974400&v=beta&t=flpLCJ9AKmV3RdGzD8EP8n9daJRV2VMBEIQSxWwV0Qs",
       linkedin: "https://ca.linkedin.com/in/vineettejnani"
     },
     {
