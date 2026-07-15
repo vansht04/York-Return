@@ -5,7 +5,7 @@ export default function Team() {
   const members = [
     {
       name: "Vansh Tejnani",
-      role: "Founder",
+      role: "Co-Founder",
       bio: "LOOKING FOR AN INTERNSHIP, HIRE ME!!!!",
       img: "https://media.licdn.com/dms/image/v2/D4D03AQFm5GXBDZMMJw/profile-displayphoto-crop_800_800/B4DZ5qNVNEG4AM-/0/1779898340428?e=1785974400&v=beta&t=AjYy6KOMQ5BuMMR5RU9o-VrK-GyFjFpuS9inTzbRuvA",
       linkedin: "https://www.linkedin.com/in/vansht/"
