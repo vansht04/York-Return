@@ -79,9 +79,6 @@ export default function Home({ items, onReportClick }: HomeProps) {
                     <h3 className="text-2xl font-black mb-4">Security first.</h3>
                     <p className="text-gray-400 font-medium leading-relaxed mb-8">Verification ensures only real York University students can browse and report belongings.</p>
                     <div className="space-y-4">
-                      <div className="h-4 bg-gray-50 rounded-full w-full" />
-                      <div className="h-4 bg-gray-50 rounded-full w-3/4" />
-                      <div className="h-4 bg-red-50 rounded-full w-1/2" />
                     </div>
                  </div>
                </motion.div>
