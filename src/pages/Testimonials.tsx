@@ -34,7 +34,7 @@ export default function Testimonials() {
                   <p className="text-xs font-bold uppercase tracking-widest opacity-60">Recovery Rate</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-black text-emerald-500">2hr</p>
+                  <p className="text-3xl font-black text-emerald-500">1hr</p>
                   <p className="text-xs font-bold uppercase tracking-widest opacity-60">Avg. Response Time</p>
                 </div>
                 <div className="pt-6 border-t border-white/10">
