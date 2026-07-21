@@ -116,7 +116,7 @@ export default function App() {
             <Link to="/team" className="text-xs font-bold text-gray-400 uppercase tracking-widest hover:text-[#E31837] transition-colors">Meet the Team</Link>
           </div>
           <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest opacity-50">
-            2026 YorkReturn &copy; All Rights Reserved • Secure Campus Infrastructure
+            &copy; 2026 YorkReturn. All rights reserved. • Secure Campus Infrastructure
           </p>
         </footer>
 
