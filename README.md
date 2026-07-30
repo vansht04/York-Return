@@ -275,9 +275,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 > **Disclaimer**: *YorkReturn is an independent open-source project developed for the York University campus community. It is not officially operated by York University Administration or York Security Services, though it incorporates recommended campus drop-off safety guidelines.*
 
 ---
-
-<div align="center">
-
-Made with ❤️ for the York University Community 🎓
-
-</div>
