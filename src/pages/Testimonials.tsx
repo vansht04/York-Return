@@ -53,7 +53,7 @@ export default function Testimonials() {
               ))}
             </div>
             <h4 className="text-lg font-black mb-2">Campus Standard</h4>
-            <p className="text-gray-500 text-sm font-medium">The official unofficial way to get your stuff back at York.</p>
+            <p className="text-gray-500 text-sm font-medium">The official way to get your stuff back at York.</p>
           </div>
         </div>
       </div>
