@@ -78,7 +78,7 @@ export default function Team() {
                 className="w-full h-12 rounded-2xl bg-gray-50 flex items-center justify-center text-gray-400 hover:text-[#0077b5] hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-blue-100"
               >
                 <Linkedin className="w-5 h-5 mr-2" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Connect on LinkedIn</span>
+                <span className="text-[10px] font-black uppercase tracking-widest">Connect</span>
               </a>
             </div>
           </motion.div>
