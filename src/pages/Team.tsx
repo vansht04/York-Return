@@ -44,7 +44,7 @@ export default function Team() {
           <Users className="w-8 h-8" />
         </div>
         <h1 className="text-5xl font-black tracking-tight mb-4 text-gray-900">Meet the Team</h1>
-        <p className="text-gray-500 font-medium">The students building secure campus infrastructure.</p>
+        <p className="text-gray-500 font-medium">The people behind YorkReturn</p>
       </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
