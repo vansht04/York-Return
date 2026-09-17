@@ -7,7 +7,7 @@ export default function Team() {
       name: "Vansh Tejnani",
       role: "Co-Founder",
       bio: "Professional bug creator",
-      img: "https://media.licdn.com/dms/image/v2/D4D03AQFm5GXBDZMMJw/profile-displayphoto-crop_800_800/B4DZ5qNVNEG4AM-/0/1779898340428?e=1787788800&v=beta&t=hZQZMyfVTkphEj7nUwZUfokfJ2ybemuzH57KhVlk_QI",
+      img: "https://media.licdn.com/dms/image/v2/D4D03AQFm5GXBDZMMJw/profile-displayphoto-scale_200_200/B4DZ5qNVNEG4Ag-/0/1779898340428?e=2147483647&v=beta&t=8mclkvjBbhbpXyi7w6sc3Clq2Kkp2La_lluh3yR1e4k",
       linkedin: "https://www.linkedin.com/in/vansht/"
     },
     {
