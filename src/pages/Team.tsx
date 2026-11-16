@@ -13,7 +13,7 @@ export default function Team() {
       name: "Vineet Tejnani",
       role: "Co-Founder",
       img: "https://media.licdn.com/dms/image/v2/D4D03AQG5l96c77h03Q/profile-displayphoto-shrink_200_200/B4DZa2NW1pGwAY-/0/1746813677769?e=2147483647&v=beta&t=QBHn-IkwAEiKLssjR-JbGkyAHxTXHasAOcWUY7aWb8w",
-      linkedin: "https://ca.linkedin.com/in/vineettejnani"
+      linkedin: "https://www.linkedin.com/in/vineettejnani/"
     }
   ];
 
