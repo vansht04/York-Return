@@ -6,30 +6,14 @@ export default function Team() {
     {
       name: "Vansh Tejnani",
       role: "Co-Founder",
-      bio: "Professional bug creator",
       img: "https://media.licdn.com/dms/image/v2/D4D03AQFm5GXBDZMMJw/profile-displayphoto-scale_200_200/B4DZ5qNVNEG4Ag-/0/1779898340428?e=2147483647&v=beta&t=8mclkvjBbhbpXyi7w6sc3Clq2Kkp2La_lluh3yR1e4k",
       linkedin: "https://www.linkedin.com/in/vansht/"
     },
     {
       name: "Vineet Tejnani",
       role: "Co-Founder",
-      bio: "Unofficial social media admin",
       img: "https://media.licdn.com/dms/image/v2/D4D03AQG5l96c77h03Q/profile-displayphoto-shrink_200_200/B4DZa2NW1pGwAY-/0/1746813677769?e=2147483647&v=beta&t=QBHn-IkwAEiKLssjR-JbGkyAHxTXHasAOcWUY7aWb8w",
       linkedin: "https://ca.linkedin.com/in/vineettejnani"
-    },
-    {
-      name: "Agasti Kulkarni",
-      role: "Co-Founder",
-      bio: "Hasn't closed a tab since 2022",
-      img: "https://media.licdn.com/dms/image/v2/D4E03AQGfzSoACMojJg/profile-displayphoto-scale_200_200/B4EZtjntwNJQAc-/0/1766902914595?e=2147483647&v=beta&t=lsuzyNxWbciXzd8sP23NNKJBLUSTQqYViOh03BqD7P4",
-      linkedin: "https://ca.linkedin.com/in/agasti-kulkarni-005191329"
-    },
-    {
-      name: "Kenzi Sulaiman",
-      role: "Co-Founder",
-      bio: "Mostly (always) caffeinated",
-      img: "https://media.licdn.com/dms/image/v2/D4E03AQGaEIwACDXxew/profile-displayphoto-scale_200_200/B4EZ6gIjvjI0Ac-/0/1780803059365?e=2147483647&v=beta&t=bprMD2is9D_3aToI2BtnVJc3ZxvNQPiQNvubAeGA9q8",
-      linkedin: "https://ca.linkedin.com/in/kenzis"
     }
   ];
 
