@@ -31,7 +31,7 @@ export default function Team() {
         <p className="text-gray-500 font-medium">The people behind YorkReturn</p>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
         {members.map((member, i) => (
           <motion.div 
             key={i}
